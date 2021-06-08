@@ -1,0 +1,3 @@
+Event "Rated Blitz"
+WhiteElo >= "1200"
+BlackElo >= "1200"
