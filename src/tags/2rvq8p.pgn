@@ -1,0 +1,163 @@
+[Event "Rated Blitz game"]
+[Site "https://lichess.org/wt1ycvpy"]
+[Date "????.??.??"]
+[Round "?"]
+[White "bolota"]
+[Black "lovechambertin"]
+[Result "0-1"]
+[WhiteElo "1657"]
+[BlackElo "1622"]
+[ECO "A03"]
+[Opening "Bird Opening: Dutch Variation"]
+[TimeControl "300+0"]
+[UTCDate "2013.08.25"]
+[UTCTime "15:42:06"]
+[Termination "Normal"]
+[WhiteRatingDiff "-12"]
+[BlackRatingDiff "+27"]
+
+1. f4 d5 2. Nf3 Nc6 3. d4 Nf6 4. e3 Ne4 5. c3 g6 6. Bd3 Bg7 7. O-O O-O 8.
+Nbd2 f5 9. Ne5 Nxe5 10. fxe5 e6 11. Qe1 Bd7 12. Rf3 c5 13. Rh3 Qg5 14. Nf3
+Qe7 15. a3 c4 16. Bc2 Rf7 17. Nd2 Raf8 18. Nxe4 fxe4 19. g3 Rf1+ 20. Qxf1
+Rxf1+ 21. Kxf1 Qf7+ 22. Kg2 Qf3+ 23. Kg1 Qe2 24. Bb1 Qe1+ 25. Kg2 Qxc1 0-1
+
+[Event "Rated Blitz game"]
+[Site "https://lichess.org/friw3xe3"]
+[Date "????.??.??"]
+[Round "?"]
+[White "Palo147"]
+[Black "mn_raaja"]
+[Result "0-1"]
+[WhiteElo "1330"]
+[BlackElo "1393"]
+[ECO "C20"]
+[Opening "King's Pawn Game: Wayward Queen Attack"]
+[TimeControl "300+0"]
+[UTCDate "2013.12.21"]
+[UTCTime "17:14:35"]
+[Termination "Normal"]
+[WhiteRatingDiff "-10"]
+[BlackRatingDiff "+9"]
+
+1. e4 e5 2. Qh5 d6 3. Bc4 g6 4. Qf3 f6 5. Qb3 Qe7 6. Bxg8 Rxg8 7. Qxg8 Be6
+8. Qh8 Nd7 9. Nc3 O-O-O 10. Nd5 Bxd5 11. exd5 Qf7 12. c4 Be7 13. Qxd8+ Bxd8
+14. d3 a6 15. Be3 Kb8 16. Bd2 Nc5 17. Ke2 h5 18. h3 g5 19. g3 f5 20. Nf3 e4
+21. Ng1 exd3+ 22. Kd1 Ne4 23. Be3 f4 24. gxf4 gxf4 25. Bc1 Nxf2+ 26. Kd2
+Nxh1 27. Kxd3 Nf2+ 28. Ke2 Ne4 29. Nf3 Ng3+ 30. Kf2 Ne4+ 31. Kg2 Qg7+ 32.
+Kf1 Ng3+ 33. Ke1 Nh1 34. Bxf4 Qe7+ 35. Kf1 Qe4 36. Kg2 Qxf4 37. Rxh1 Bh4
+38. Nxh4 Qxh4 39. Kf3 Qf6+ 40. Kg3 Qxb2 41. Rf1 Qxa2 42. Rf8+ Ka7 43. Rf4
+a5 44. Kh4 a4 45. c5 dxc5 46. Rf5 a3 47. Rxh5 Qc4+ 48. Kg3 Qc3+ 49. Kg4 a2
+50. d6 cxd6 51. Rh6 Qc4+ 52. Kf5 a1=Q 53. Rxd6 Qaf1+ 54. Kg5 Qcf4+ 55. Kg6
+Qxd6+ 56. Kg7 Qff6+ 57. Kh7 Qh6+ 58. Kg8 Qdf8# 0-1
+
+[Event "Rated Blitz game"]
+[Site "https://lichess.org/1fu615RA"]
+[Date "????.??.??"]
+[Round "?"]
+[White "cesarpr78"]
+[Black "joan1976"]
+[Result "1-0"]
+[WhiteElo "1543"]
+[BlackElo "1346"]
+[ECO "C00"]
+[Opening "French Defense: Schlechter Variation"]
+[TimeControl "180+5"]
+[UTCDate "2014.04.12"]
+[UTCTime "16:16:55"]
+[Termination "Time forfeit"]
+[WhiteRatingDiff "+5"]
+[BlackRatingDiff "-42"]
+
+1. d4 e6 2. e4 d5 3. Bd3 Nc6 4. Be3 Bb4+ 5. c3 Ba5 6. b4 Bb6 7. e5 f5 8. a4
+a5 9. b5 Nce7 10. Qh5+ g6 11. Qh6 Nxh6 12. Bxh6 Ng8 13. Bg7 Qe7 14. Bxh8
+Nh6 15. Nf3 Bd7 16. h4 O-O-O 17. Bf6 Qe8 18. Bxd8 Qxd8 19. Nbd2 c5 20. Ng5
+Qg8 21. Rc1 c4 22. Be2 Bd8 23. O-O Bxg5 24. hxg5 Nf7 25. f4 b6 26. Nb3 h5
+27. Kf2 Qh8 28. Rh1 h4 29. Rh3 Nd8 30. Rch1 Qg7 31. Rxh4 Kc7 32. Rh8 Nf7
+33. R1h7 Qxh8 34. Rxh8 Nxh8 35. g4 fxg4 36. Bxg4 Nf7 37. Nd2 Kd8 38. Nf3
+Ke7 39. Nh4 Nh8 40. Bd1 Kf7 41. Bc2 Be8 42. Kg3 Kg7 43. Kg4 Kh7 44. Bb1 Bf7
+45. Nf3 Kg7 46. Ng1 Be8 47. Nh3 Bf7 48. Kf3 Kh7 49. Bc2 Be8 50. Bb1 Bf7 51.
+Nf2 Kg7 52. Ng4 Kf8 53. Nf6 Ke7 54. Nh7 Be8 55. Kg4 Kf7 56. Nf6 1-0
+
+[Event "Rated Blitz game"]
+[Site "https://lichess.org/A7ErgCpO"]
+[Date "????.??.??"]
+[Round "?"]
+[White "tekin_42"]
+[Black "denisdesouza"]
+[Result "1/2-1/2"]
+[WhiteElo "1217"]
+[BlackElo "1444"]
+[ECO "D05"]
+[Opening "Colle System #2"]
+[TimeControl "180+2"]
+[UTCDate "2014.07.22"]
+[UTCTime "23:59:18"]
+[Termination "Normal"]
+[WhiteRatingDiff "+57"]
+[BlackRatingDiff "-5"]
+
+1. d4 Nf6 2. Nf3 e6 3. e3 d5 4. Bd3 c6 5. O-O Be7 6. a3 b5 7. Re1 Bb7 8. c3
+Nbd7 9. Qb3 a5 10. Qc2 Nb6 11. Nbd2 Nc4 12. Nxc4 bxc4 13. Be2 Ne4 14. Ne5
+Bd6 15. f3 Nf6 16. f4 Ne4 17. Rf1 f5 18. Rf3 O-O 19. Rh3 Bxe5 20. fxe5 Ng5
+21. Rg3 g6 22. Qd1 Ne4 23. Rh3 Qg5 24. Bf3 Rf7 25. Qe1 Raf8 26. Bxe4 fxe4
+27. Rg3 Qe7 28. Rh3 Rf5 29. Qe2 Qf7 30. Bd2 Rf2 31. Qe1 g5 32. Rg3 h6 33.
+h3 Kh7 34. Rd1 Qg6 35. Rc1 h5 36. Rd1 g4 37. h4 Qf7 38. Rc1 Qe8 39. Rd1 Kh6
+40. Rc1 Qd7 41. Qd1 Rf1+ 42. Qxf1 Rxf1+ 43. Rxf1 Kh7 44. Rf6 Qe7 45. Rf4
+Bc8 46. Be1 Bd7 47. Kh2 Be8 48. Rf2 Bg6 49. Rf1 c5 50. Kh1 cxd4 51. cxd4
+Qb7 52. Bc3 Qb3 53. Rf8 a4 54. Re8 Qd1+ 55. Kh2 Qe2 56. Rxe6 Bf7 57. Re7
+Kg7 58. Ra7 Qc2 59. Rd7 Qd3 60. Rxd5 Bxd5 61. Kg1 Qe2 62. Kh2 Qd3 63. Kg1
+Bc6 64. Kh2 Bd7 65. Kg1 Be6 66. Kh2 Qe2 67. Kg1 Qd1+ 68. Kh2 Qe2 69. Kg1
+Qd3 70. Kh2 Qc2 71. Kg1 Qb3 72. Kh2 Qb7 73. Kh1 Bf5 74. Kh2 Kg6 75. Kg1 Be6
+76. Kh2 Qb3 77. Kg1 Qc2 78. Kh2 Qe2 79. Kg1 Qf3 80. Kh2 Qxg3+ 81. Kxg3 Bd5
+82. Kf2 Kf7 83. Kg3 Ke6 84. Kf2 Kd7 85. Kg3 Kc6 86. Kf2 Kd7 87. Kg3 Ke6 88.
+Kf2 Kd7 89. Kg3 Ke6 90. Kf2 Kd7 91. Kg3 Ke6 92. Kf2 Kd7 93. Kg3 Ke6 94. Kf2
+Kd7 95. Kg3 Ke6 96. Kf2 Kd7 97. Kg3 Ke6 98. Kf2 Kd7 99. Kg3 Ke6 100. Kf2
+Kd7 101. g3 Ke6 102. Bd2 Kd7 103. Ke1 Be6 104. Kd1 Kc6 105. Kc1 Kd5 106.
+Bc3 Bd7 107. Kc2 Bb5 108. Bd2 1/2-1/2
+
+[Event "Rated Blitz game"]
+[Site "https://lichess.org/hVDaaGcJ"]
+[Date "????.??.??"]
+[Round "?"]
+[White "hotnhrd"]
+[Black "kendo06"]
+[Result "0-1"]
+[WhiteElo "1409"]
+[BlackElo "1475"]
+[ECO "A00"]
+[Opening "Van't Kruijs Opening"]
+[TimeControl "180+0"]
+[UTCDate "2014.09.10"]
+[UTCTime "18:23:05"]
+[Termination "Time forfeit"]
+[WhiteRatingDiff "-9"]
+[BlackRatingDiff "+9"]
+
+1. e3 c5 2. Bc4 b6 3. Qf3 e6 4. Qxa8 Nc6 5. Qb8 d6 6. Qa8 Nge7 7. Bb5 Qd7
+8. Nf3 g6 9. b3 Bg7 10. Nc3 Bxc3 11. dxc3 O-O 12. Bb2 Ba6 13. Bxc6 Nxc6 14.
+Qxf8+ Kxf8 15. c4 Kg8 16. O-O Bb7 17. Rad1 Qe7 18. g3 e5 19. a3 a5 20. c3
+Qe6 21. Ng5 Qg4 22. h4 h6 23. Nxf7 Kxf7 24. Kh2 Ne7 25. f4 Qe2+ 26. Kh3
+Qxb2 0-1
+
+[Event "Rated Blitz tournament https://lichess.org/tournament/h7hIY8Vy"]
+[Site "https://lichess.org/3br0dJvv"]
+[Date "????.??.??"]
+[Round "?"]
+[White "sps53"]
+[Black "thachsung1234"]
+[Result "0-1"]
+[WhiteElo "1509"]
+[BlackElo "1589"]
+[ECO "A00"]
+[Opening "Saragossa Opening"]
+[TimeControl "300+0"]
+[UTCDate "2014.12.06"]
+[UTCTime "10:39:31"]
+[Termination "Normal"]
+[WhiteRatingDiff "-9"]
+[BlackRatingDiff "+9"]
+
+1. c3 g6 2. e3 Bg7 3. Bc4 b6 4. Qf3 e6 5. Qxa8 Nc6 6. Bb5 Nge7 7. Bxc6 Nxc6
+8. Nf3 O-O 9. Nd4 Bxd4 10. cxd4 Qg5 11. g3 Ba6 12. Qxf8+ Kxf8 13. Nc3 d5
+14. b3 Nb4 15. Kd1 Qg4+ 16. Ne2 Qxe2# 0-1
+
