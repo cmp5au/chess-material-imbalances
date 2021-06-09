@@ -1,4 +1,3 @@
-#!/bin/bash
 urls=""
 for i in 2013 2014
 do
@@ -12,10 +11,6 @@ do
     done
 done
 
-# strip the leading space character
 urls=${urls:1}
 
-for u in $urls
-do
-    curl "$u" | pbzip2 -d | pgn-extract -s -t tags/blitzgames | pgn-extract -s -t tags/nomaster >> ../data/2013-2014-blitz.pgn
-done
+echo $urls
