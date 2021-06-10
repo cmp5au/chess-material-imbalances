@@ -17,6 +17,7 @@ _________________________
 
 ## Background
 Chess is a two-person strategy game where each player attempts to coordinate their pieces -- pawns, knights, bishops, rooks, queen, and king -- to attack the opposing king and prevent its escape, resulting in checkmate and the end of the game. Each of these pieces has a relative material value, commonly given as:
+<center>
 | Piece  | Value |
 |  :-:   | :-: |
 | Pawn   | 1 |
@@ -24,6 +25,7 @@ Chess is a two-person strategy game where each player attempts to coordinate the
 | Bishop | 3 |
 | Rook   | 5 |
 | Queen  | 9 |
+</center>
 
 In blitz chess, there is an added component of a clock that can cause a player to lose if they run out of time.
 
