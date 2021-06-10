@@ -5,9 +5,9 @@ _________________________
 ## Table of Contents
 _________________________
 
-1. [Background](#bg)
+1. [Background](#background)
 2. [Data](#data)
-3. [Exploratory Data Analysis](#eda)
+3. [Exploratory Data Analysis](#exploratory)
 4. [Hypothesis Testing](#ht)
 5. [Sources](#srcs)
 
