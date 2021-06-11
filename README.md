@@ -33,7 +33,7 @@ Chess is a two-person strategy game where each player attempts to coordinate the
 
 <br>
 
-Based on this table, there are material exchanges that are nominally equal but that create an imbalance in the game: bishop for knight, 2 bishops for 2 knights, bishop and knight for rook and pawn, and queen for two rooks, for example. Chess masters, teachers, and coaches generally prefer one side of these exchanges over the other despite the seemingly equal trade. For example, masters <strong>strongly</strong> prefer to have a pair of bishops over a pair of knights, a knight and bishop over a rook and pawn, and 2 rooks over a queen. That being said, the size of the advantage always depends on the state of the chessboard.
+Based on this table, there are material exchanges that are nominally equal but create an imbalance in the game: bishop for knight, 2 bishops for 2 knights, bishop and knight for rook and pawn, and queen for two rooks, for example. Chess masters, teachers, and coaches generally prefer one side of these exchanges over the other despite the seemingly equal trade. For example, masters <strong>strongly</strong> prefer to have a pair of bishops over a pair of knights, a knight and bishop over a rook and pawn, and 2 rooks over a queen. That being said, the size of the advantage always depends on the state of the chessboard.
 
 My goal is to answer the following questions:
 1. Does the material imbalance confer an advantage, even to amateur players?
@@ -132,7 +132,7 @@ This can be shown to be equivalent to using the difference between win rate and 
 <br>
 <br>
 
-Because average point value is the weighted mean of proportions that sum to 1, it also behaves as a proportion and allows us to perform a simple 1-sample test of proportions. The null hypothesis in each case is that the average point value is 0.5 (win rate = loss rate), and the alternative hypothesis is that the average point value is not 0.5, giving us a two-tailed test. Our alpha value -- p-value threshold for rejecting the null hypothesis -- is 5%, and after applying the Bonferroni correction to the 3 simultaneous tests we have an effective rejection threshold of 1.66667%. 
+Because average point value is the weighted mean of proportions that sum to 1, it also behaves as a proportion and allows us to perform a simple 1-sample test of proportions. <strong>The null hypothesis in each case is that the average point value is 0.5 (win rate = loss rate), and the alternative hypothesis is that the average point value is not 0.5, giving us a two-tailed test.</strong> Our alpha value -- p-value threshold for rejecting the null hypothesis -- is 5%, and after applying the Bonferroni correction to the 3 simultaneous tests we have an effective rejection threshold of 1.66667%. 
 
 <br>
 <div align="center">
@@ -189,6 +189,8 @@ _________________________
 
 ### Digging Deeper
 
+#### Two Rooks v. Queen
+
 Let's start with the most difficult case of Two Rooks v. Queen, the sample with by far the smallest effect size and smallest sample size. The main imbalance here is that the two rooks are better at coordinating to attack a single target by providing more attackers than the defenders, while the queen is more mobile and can attack both sides of the board at once. To examine this in depth, I grouped the games into 9 buckets based on the number of pawns left on the board when the imbalance appeared, 0 to 8 pawns. The buckets for 0 pawns and 8 pawns were extremely small, so I lumped them in with their neighboring bucket to get a final 7 buckets: "1 or fewer" to "7 or more" pawns. I then examined the win rate, draw rate, and loss rate of each of these buckets:
 
 <br>
@@ -211,6 +213,7 @@ This shows a statistically significant monotonic relationship between the number
 
 <br>
 
+#### Bishop pair v. Knight pair
 Next we can look at Bishop pair v. Knight pair, which has the largest sample size and a strong effect. With many ways of splitting the dataset (with or without queens, number of pawns on the board) this effect persists, but one way of justifying the advantage is that the bishops are more mobile than the knights and can attack both sides of the board at once. In this light, the advantage of the bishops should be maximized when there is more material on the board and minimized in an endgame. To visualize this the bishop pair v. knight pair games were placed into 28 buckets based on total material value on the board after the imbalance appeared. Many of the buckets corresponding to lower material value were small and similarly-behaved, so they were grouped into a single "28 or fewer" bucket for a cleaner visual:
 
 <br>
@@ -223,6 +226,8 @@ Next we can look at Bishop pair v. Knight pair, which has the largest sample siz
 Win rate and loss rate are mostly reflections of each other, but again they both decrease in the limit of very little material remaining which indicates an increase in draw rate. Interestingly, the advantage of the bishop pair seems to disappear when the material remaining reaches 29 (58 total). This is still most of the material on the board, so the takeaway in this case is that <strong>for amateur players, the bishop pair advantage is worthwhile in the opening when almost all material remains on the board. Otherwise, the imbalance doesn't provide a signficiant advantage to either side.</strong>
 
 <br>
+
+#### Bishop & Knight v. Rook & Pawn
 
 Lastly the Bishop & Knight v. Rook & Pawn had the largest effect size. The side with the two minor pieces has more pieces available for attack, so I believe the presence of the strongest attacking piece -- the queen -- should make a large difference in the evaluation of this imbalance:
 
