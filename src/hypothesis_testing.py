@@ -25,9 +25,15 @@ def one_sample_proportion_test_p(tag):
                     results.sum())
     se = np.sqrt(avg_points * (1 - avg_points) / results.sum())
     z = (avg_points - 0.5) / se
+    print("n: ", results.sum())
+    print("avg_points: ", avg_points)
+    print("se: ", se)
+    print("z: ", z)
     if z < 0:
+        print("p: ", 2 * stats.norm().cdf(z))
         return 2 * stats.norm().cdf(z)
     else:
+        print("p: ", 2 * (1 - stats.norm().cdf(z)))
         return 2 * (1 - stats.norm().cdf(z))
 
 
