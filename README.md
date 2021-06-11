@@ -21,6 +21,7 @@ _________________________
 ## Background
 Chess is a two-person strategy game where each player attempts to coordinate their pieces -- pawns, knights, bishops, rooks, queen, and king -- to attack the opposing king and prevent its escape, resulting in checkmate and the end of the game. A win for White is recorded as 1-0, denoting 1 point for White and 0 points for Black. Similarly, a win for Black is 0-1, and a draw is 0.5-0.5. I will use the term <strong>point value</strong> to refer to the overall result of the game. Each of the pieces has a relative material value, commonly given as:
 
+<br>
 | Piece  | Value |
 |  :-:   | :-: |
 | Pawn   | 1 |
@@ -28,6 +29,7 @@ Chess is a two-person strategy game where each player attempts to coordinate the
 | Bishop (B) | 3 |
 | Rook (R)   | 5 |
 | Queen (Q)  | 9 |
+<br>
 
 Based on this table, there are material exchanges that are nominally equal but that create an imbalance in the game: bishop for knight, 2 bishops for 2 knights, bishop and knight for rook and pawn, and queen for two rooks, for example. Chess masters, teachers, and coaches generally prefer one side of these exchanges over the other despite the seemingly equal trade. For example, masters <strong>strongly</strong> prefer to have a pair of bishops over a pair of knights, a knight and bishop over a rook and pawn, and 2 rooks over a queen. That being said, any chess player will tell you that the size of the advantage depends on the position.
 
@@ -40,6 +42,8 @@ My goal is to answer the following questions:
 ### Raw Dataset
 
 The online free chess website [lichess.org](http://www.lichess.org/) features a database of every game ever played from January 2013 to May 2021. The data is in Portable Game Notation (PGN) format, as shown in the game below.
+
+<br>
 
 ```text
 [Event "Rated Blitz game"]
@@ -66,7 +70,9 @@ The online free chess website [lichess.org](http://www.lichess.org/) features a 
 d4 Rad8 21. dxe5 Rxd1+ 22. Rxd1 fxe5 23. Rd7+ 1-0
 ```
 
-This features metadata of the game first, followed by a list of moves in modern algebraic chess notation, which is difficult to read and requires parsing. For example, it is not immediately clear that this game features two amateur players that reach a bishop pair vs. knight pair position that White converted into a victory by resignation.
+<br>
+
+This features metadata of the game followed by a list of moves in modern algebraic chess notation that is difficult to read and requires parsing. In this example, it isn't immediately clear that this game features two amateur players that reach a bishop pair vs. knight pair position that White converted into a victory by resignation.
 
 The unabridged raw dataset of over 2.2 billion games is available at [database.lichess.org](https://database.lichess.org/). Each month's games are available to download as bzip2 files. Of these, about 15 million were played in 2013 or 2014.
 
@@ -79,17 +85,23 @@ _________________________
 ## Exploratory Data Analysis
 The first thing I looked at was win rate for White and Black vs. draw rate:
 
+<br>
 <div align="center">
     <img width="400" src="./images/win_loss_draw_bar.png" alt="chmod Options">
 </div>
+<br>
+<br>
 
 We see that the games are usually decisive; rarely drawn. There is also evidence of White's first move advantage showing in a win rate 5% higher than Black's. From here, I was curious to see how many games featured completely equal material balance <strong>after the opening</strong>, which I defined as each side having lost at least 3 points of material and the position being stable to a depth of 3 moves.
 
+<br>
 <div align="center">
     <img width="1200" src="./images/total_games_bar.png" alt="chmod Options">
 </div>
+<br>
+<br>
 
-A shockingly large number of amateur blitz games feature one side winning a pawn or more out of the opening, about 2 in 3 games. Some of this could be from <strong>gambits</strong> -- sacrificing a pawn for the ability to quickly bring pieces into play -- but these too can equalize after the gambiteer converts their positional advantage into winning back the pawn.
+A shockingly large number of amateur blitz games feature one side winning a pawn or more out of the opening, about 2 in 3 games. Some of this could be from <strong>gambits</strong> -- sacrificing a pawn for the ability to quickly bring pieces into play -- but these too can equalize after the gambiteer converts their positional advantage into winning back material.
 
 _________________________
 
@@ -98,18 +110,30 @@ At this point, the games featuring the interesting material imbalances have been
 
 The metric I chose to answer this question is the average point value:
 
-$$\text{Average point value} = \text{Win rate} + \frac{\text{Draw rate}}{2}$$
+<br>
+<div align="center">
+    <img width="430" src="./images/avg_pt_val_def.png" alt="chmod Options">
+</div>
+<br>
+<br>
 
 This can be shown to be equivalent to using the difference between win rate and loss rate:
 
-$$\text{Loss rate} = 1 - \text{Win rate} - \text{Draw rate}$$
-$$\text{Average point value} = \text{Win rate} + \frac{1 - \text{Win rate} - \text{Loss rate}}{2}$$
-$$ = \frac{1}{2} + \frac{\text{Win rate} - \text{Loss rate}}{2}$$
+<br>
+<div align="center">
+    <img width="600" src="./images/winr_lossr.png" alt="chmod Options">
+</div>
+<br>
+<br>
 
 Because average point value is the weighted mean of proportions that sum to 1, it also behaves as a proportion and allows us to perform a simple 1-sample test of proportions. The null hypothesis in each case is that the average point value is 0.5 (win rate = loss rate), and the alternative hypothesis is that the average point value is not 0.5, giving us a two-tailed test. Our alpha value -- p-value threshold for rejecting the null hypothesis -- is 5%, and after applying the Bonferroni correction to the 3 simultaneous tests we have an effective rejection threshold of 1.66667%. 
 
-$$H_\text{o}: p = 0.5$$
-$$H_\text{a}: p \neq 0.5$$
+<br>
+<div align="center">
+    <img width="200" src="./images/hypotheses.png" alt="chmod Options">
+</div>
+<br>
+<br>
 
 <center>
 Sample 1 (Bishop pair v. Knight pair):
@@ -152,9 +176,11 @@ Sample 3 (Two Rooks v. Queen):
 | p value               | 0.266747      |
 
 </center>
+<br>
 
 While each of these cases had an effect direction that corresponded to masters' preferences, only the Bishop pair v. Knight pair and Knight & Bishop v. Rook & Pawn had a statistically significant effect. We choose to reject the null hypothesis for these first two cases, but fail to reject the null hypothesis for the final case of Two Rooks v. Queen.
 _________________________
 
 ### Digging Deeper
 
+Let's start with the most difficult case of Two Rooks v. Queen, the sample with by far the smallest effect size and smallest sample size. 
