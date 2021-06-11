@@ -12,6 +12,9 @@ _________________________
 3. [Exploratory Data Analysis](#exploratory-data-analysis)
 4. [Hypothesis Testing](#hypothesis-testing)
     * [Digging Deeper](#digging-deeper)
+        * [Two Rooks v. Queen](#two-rooks-v.-queen)
+        * [Bishop pair v. Knight pair](#bishop-pair-v.-knight-pair)
+        * [Knight & Bishop v. Rook & Pawn](#knight-&-bishop-v.-rook-&-pawn)
 5. [Sources and Further Reading](#sources-and-further-reading)
 
 <div align="center">
