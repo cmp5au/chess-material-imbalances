@@ -22,6 +22,7 @@ _________________________
 Chess is a two-person strategy game where each player attempts to coordinate their pieces -- pawns, knights, bishops, rooks, queen, and king -- to attack the opposing king and prevent its escape, resulting in checkmate and the end of the game. A win for White is recorded as 1-0, denoting 1 point for White and 0 points for Black. Similarly, a win for Black is 0-1, and a draw is 0.5-0.5. I will use the term <strong>point value</strong> to refer to the overall result of the game. Each of the pieces has a relative material value, commonly given as:
 
 <br>
+
 | Piece  | Value |
 |  :-:   | :-: |
 | Pawn   | 1 |
@@ -29,6 +30,7 @@ Chess is a two-person strategy game where each player attempts to coordinate the
 | Bishop (B) | 3 |
 | Rook (R)   | 5 |
 | Queen (Q)  | 9 |
+
 <br>
 
 Based on this table, there are material exchanges that are nominally equal but that create an imbalance in the game: bishop for knight, 2 bishops for 2 knights, bishop and knight for rook and pawn, and queen for two rooks, for example. Chess masters, teachers, and coaches generally prefer one side of these exchanges over the other despite the seemingly equal trade. For example, masters <strong>strongly</strong> prefer to have a pair of bishops over a pair of knights, a knight and bishop over a rook and pawn, and 2 rooks over a queen. That being said, any chess player will tell you that the size of the advantage depends on the position.
