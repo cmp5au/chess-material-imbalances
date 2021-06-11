@@ -145,6 +145,7 @@ Because average point value is the weighted mean of proportions that sum to 1, i
 <br>
 
 <center>
+
 Sample 1 (Bishop pair v. Knight pair):
 <br>
 
