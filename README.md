@@ -19,7 +19,7 @@ _________________________
 </div>
 
 ## Background
-Chess is a two-person strategy game where each player attempts to coordinate their pieces -- pawns, knights, bishops, rooks, queen, and king -- to attack the opposing king and prevent its escape, resulting in checkmate and the end of the game. A win for White is recorded as 1-0, denoting 1 point for White and 0 points for Black. Similarly, a win for Black is 0-1, and a draw is 0.5-0.5. I will use the term <strong>point value</strong> to refer to the overall result of the game. Each of the pieces has a relative material value, commonly given as:
+Chess is a two-person strategy game where each player attempts to coordinate their pieces -- pawns, knights, bishops, rooks, queen, and king -- to attack the opposing king and prevent its escape, resulting in checkmate and the end of the game. A win for White is recorded as 1-0, denoting 1 point for White and 0 points for Black. Similarly, a win for Black is 0-1, and a draw is 0.5-0.5. I will use the term <strong>point value</strong> to refer to the overall result of the game. Each of the pieces has a relative <strong>material value</strong>, commonly given as:
 
 <br>
 
@@ -33,7 +33,7 @@ Chess is a two-person strategy game where each player attempts to coordinate the
 
 <br>
 
-Based on this table, there are material exchanges that are nominally equal but that create an imbalance in the game: bishop for knight, 2 bishops for 2 knights, bishop and knight for rook and pawn, and queen for two rooks, for example. Chess masters, teachers, and coaches generally prefer one side of these exchanges over the other despite the seemingly equal trade. For example, masters <strong>strongly</strong> prefer to have a pair of bishops over a pair of knights, a knight and bishop over a rook and pawn, and 2 rooks over a queen. That being said, any chess player will tell you that the size of the advantage depends on the position.
+Based on this table, there are material exchanges that are nominally equal but that create an imbalance in the game: bishop for knight, 2 bishops for 2 knights, bishop and knight for rook and pawn, and queen for two rooks, for example. Chess masters, teachers, and coaches generally prefer one side of these exchanges over the other despite the seemingly equal trade. For example, masters <strong>strongly</strong> prefer to have a pair of bishops over a pair of knights, a knight and bishop over a rook and pawn, and 2 rooks over a queen. That being said, the size of the advantage always depends on the state of the chessboard.
 
 My goal is to answer the following questions:
 1. Does the material imbalance confer an advantage, even to amateur players?
@@ -85,7 +85,11 @@ In blitz chess, there is an added component of a clock that can cause a player t
 _________________________
 
 ## Exploratory Data Analysis
-The first thing I looked at was win rate for White and Black vs. draw rate:
+The dataset was very clean, with no incomplete games, illegal moves, or null / missing tags. There was only one game that required further examination: the PGN featured a checkmate by White, but showed Black winning the game by time forfeit. After examining the game in depth, I was able to determine that White had pre-moved (a move request that doesn't get executed until the opponent makes their move) the checkmate move but didn't have enough time on their clock to register the move on the lichess server, which takes about 5ms. Therefore, it was correctly marked as a win by Black by time forfeit.
+
+<br>
+
+After checking for missing information, the first thing I looked at was win rate for White and Black vs. draw rate:
 
 <br>
 <div align="center">
@@ -248,6 +252,7 @@ This study generates as many questions as it answers:
 2. Does having 1 bishop v. 1 knight give the side with the bishop more than, less than, or exactly half of the advantage of 2 bishops v. 2 knights?
 3. What is the relationship between player rating and the advantage size of these imbalances?
     * Is the effect size of these advantages bigger at the master level?
+4. Does having one side of a material imbalance affect the win rate by checkmate vs. the win rate by time forfeit?
 
 <br>
 
