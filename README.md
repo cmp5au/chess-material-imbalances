@@ -39,7 +39,7 @@ My goal is to answer the following questions:
 
 ### Raw Dataset
 
-The online free chess website [lichess.org](http://www.lichess.org/) features a database of every game ever played from January 2013 to May 2021. The data is in Portable Game Notation (PGN) format, as shown in the game below, in which two amateur players reach a bishop pair vs. knight pair position that White converted into a victory by resignation.
+The online free chess website [lichess.org](http://www.lichess.org/) features a database of every game ever played from January 2013 to May 2021. The data is in Portable Game Notation (PGN) format, as shown in the game below.
 
 ```text
 [Event "Rated Blitz game"]
@@ -65,6 +65,8 @@ The online free chess website [lichess.org](http://www.lichess.org/) features a 
 14. Bd4 c5 15. Bc3 Nc6 16. Bxc6 dxc6 17. Qh6 Rg8 18. g3 Qg7 19. Qh3 Ke7 20.
 d4 Rad8 21. dxe5 Rxd1+ 22. Rxd1 fxe5 23. Rd7+ 1-0
 ```
+
+This features metadata of the game first, followed by a list of moves in modern algebraic chess notation, which is difficult to read and requires parsing. For example, it is not immediately clear that this game features two amateur players that reach a bishop pair vs. knight pair position that White converted into a victory by resignation.
 
 The unabridged raw dataset of over 2.2 billion games is available at [database.lichess.org](https://database.lichess.org/). Each month's games are available to download as bzip2 files. Of these, about 15 million were played in 2013 or 2014.
 
