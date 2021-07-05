@@ -153,9 +153,7 @@ Sample 1 (Bishop pair v. Knight pair):
 |--------------------	|-----------	|
 | Average Point Value   | 0.551400  	|
 | Sample Size        	| 59,698 	    |
-| Standard Error    	| 0.002036  	|
-| Z-statistic        	| 25.25127  	|
-| p value               | 0             |
+| p value               | 0 (underflow) |
 
 <br>
 <br>
@@ -167,9 +165,7 @@ Sample 2 (Knight & Bishop v. Rook & Pawn):
 |--------------------	|-----------	|
 | Average Point Value   | 0.553601  	|
 | Sample Size        	| 24,953 	    |
-| Standard Error    	| 0.003147  	|
-| Z-statistic        	| 17.03226  	|
-| p value               | 0             |
+| p value               | 0 (underflow) |
 
 <br>
 <br>
@@ -181,8 +177,6 @@ Sample 3 (Two Rooks v. Queen):
 |--------------------	|-----------	|
 | Average Point Value   | 0.508331  	|
 | Sample Size        	| 4,441 	    |
-| Standard Error    	| 0.007502  	|
-| Z-statistic        	| 1.110585  	|
 | p value               | 0.266747      |
 
 </center>
